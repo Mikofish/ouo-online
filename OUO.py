@@ -15,7 +15,7 @@ if choice=='圖表.1':
         st.write('### 桃園市各廟宇主祀神祇比例')
 
         # 從 API 讀取 JSON 數據
-        data = pd.read_json('http://data.tycg.gov.tw/api/v1/rest/datastore/b2247404-3d92-4829-9855-0cd5e71b92b3?format=json&limit=500')
+        data = pd.read_json('https://drive.google.com/file/d/1e4CiKUf4J2haO9ppatETlHforkiz_nLx/view?usp=drive_link')
         df = pd.DataFrame(data['result']['records'])
 
         # 計算各主祀神祇的數量和比例
