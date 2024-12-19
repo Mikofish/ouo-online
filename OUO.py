@@ -11,6 +11,7 @@ with st.sidebar:
 的比例
 
 if choice=='第一章':
+    st.image('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIczau5DhndEk2QpaaNgMHB7-ZcqOMIz-Q8w&s')
     st.title('第一章')
     st.write('## 壹、前言')
     st.write('##### 土地婆在台灣民間信仰中是一位重要的女神，與土地公相輔相成， 她被信徒視為賜福的象徵，能夠帶來富貴與幸福，台灣各地都有土地公廟，但是有土地婆的廟卻寥寥無幾，大部分集中在桃園市，究竟為什麼土地婆的信仰人數如此稀少呢？是因為土地公仁民愛物而深得民心，相對土地婆因擔心土地公變成爛好人而阻擋土地公有求必應的做法，被部分信眾所討厭。')
