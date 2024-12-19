@@ -6,7 +6,7 @@ import pandas as pd
 st.title('你知道伯婆嗎?')
 with st.sidebar:
     choice = st.selectbox(
-        "選擇操作", ['圖表.1','第一章'])
+        "選擇操作", ['圖表.1','第一章','廟宇分布圖','遊戲區'])
         
 if choice=='圖表.1':
     st.write('## 桃園區廟宇登記數量分析')
