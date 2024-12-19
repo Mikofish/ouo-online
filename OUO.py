@@ -2,13 +2,16 @@ import streamlit as st
 import plotly.graph_objects as go
 
 import pandas as pd
+import folium
+import streamlit as st
 
+from streamlit_folium import st_folium
 
 with st.sidebar:
     choice = st.selectbox(
         "選擇操作", ['第一章','廟宇分布圖','遊戲區'])
         
-的比例
+
 
 if choice=='第一章':
     st.image('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIczau5DhndEk2QpaaNgMHB7-ZcqOMIz-Q8w&s')
@@ -30,6 +33,14 @@ if choice=='第一章':
     st.write('##### 3.模型製作')
     st.write('##### 4.沒老師教')
     st.write('##### 5.只能看影片')
+if choice=='廟宇分布圖':
+    # center on Liberty Bell, add marker
+    m = folium.Map(location=[39.949610, -75.150282], zoom_start=16)
+    folium.Marker(
+    [39.949610, -75.150282], popup="Liberty Bell", tooltip="Liberty Bell"
+    ).add_to(m)
 
+    # call to render Folium map in Streamlit
+    st_data = st_folium(m, width=725)
 
     
