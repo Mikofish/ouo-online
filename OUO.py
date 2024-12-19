@@ -3,7 +3,7 @@ import plotly.graph_objects as go
 
 import pandas as pd
 
-st.title('你知道伯婆嗎?')
+
 with st.sidebar:
     choice = st.selectbox(
         "選擇操作", ['圖表.1','第一章','廟宇分布圖','遊戲區'])
